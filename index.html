@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Harshaa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- STAGE 1 -->
+<div id="stage1" class="section active">
+    <h1 class="question">Do You Love Me? ❤️</h1>
+    <button onclick="goToStage2()">Yes 💖</button>
+    <button onclick="sayNo()">No 😏</button>
+</div>
+
+<!-- STAGE 2 -->
+<div id="stage2" class="section">
+    <h1>Choose Your Gift 🎁</h1>
+    <button onclick="openGift1()">Gift 1 🎁</button>
+    <button onclick="openGift2()">Gift 2 🎁</button>
+    <button onclick="openGift3()">Gift 3 🎁</button>
+    <br><br>
+    <button onclick="goToStage3()">Next ➜</button>
+</div>
+
+<div id="stage3" class="section">
+    <h2>Scan QR ❤️</h2>
+    <img src="media/qrcode.png" id="qrCode" style="width:200px; height:200px; cursor:pointer;">
+    
+    <!-- Next button -->
+    <div id="nextStage3Div">
+        <button id="nextStage3">Next My Dear 💋</button>
+    </div>
+</div>
+
+<!-- PHOTOS PAGE -->
+<div id="photosPage" class="section">
+    <h1>Choose Photo 💋</h1>
+    <button onclick="showPhoto1()">Photo 1 💋</button>
+    <button onclick="showPhoto2()">Photo 2 💋</button>
+    <br><br>
+    <button onclick="goToFinal()">Next My Dear ❤️</button>
+</div>
+
+<!-- FINAL PAGE -->
+<div id="finalPage" class="section">
+    <div class="box">
+        <h2>I Love You Harshaa 💋🫂❤️</h2>
+        <button onclick="showValentine()">Slide Next ➜</button>
+    </div>
+</div>
+
+<!-- LAST MESSAGE -->
+<div id="valentineMessage" class="section">
+    <div class="box">
+        <h2>Happy Valentine's Day Harshaa ❤️</h2>
+    </div>
+</div>
+
+<!-- POPUP -->
+<div id="popupBox" class="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Sections */
+.section {
+    display: none;
+    min-height: 100vh;
+    padding-top: 180px;
+    position: relative;
+    z-index: 2;
+}
+
+.active {
+    display: block;
+}
+
+/* Question Glow */
+.question {
+    font-size: 40px;
+    text-shadow:
+        0 0 20px #ff4d6d,
+        0 0 40px #ff1e56;
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    margin: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ff4d6d;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff1e56;
+    transform: scale(1.1);
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 20px;
+    animation: floatUp linear infinite;
+    color: #ff4d6d;
+    text-shadow: 0 0 10px #ff4d6d;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 500px;
+    box-shadow: 0 0 30px #ff4d6d;
+    display: none;
+    z-index: 5;
+}
+
+.popup.show {
+    display: block;
+}
+
+/* Red Glow */
+.red-glow {
+    font-size: 26px;
+    line-height: 1.8;
+    text-shadow:
+        0 0 15px #ff4d6d,
+        0 0 30px #ff1e56;
+}
+
+/* Blue Glow */
+.blue-glow {
+    font-size: 26px;
+    color: #00ccff;
+    text-shadow:
+        0 0 15px #00ccff,
+        0 0 30px #0099ff,
+        0 0 45px #0066ff;
+}
+
+/* Letter Glow */
+.letter-glow {
+    font-size: 20px;
+    line-height: 1.8;
+    text-shadow:
+        0 0 10px #ff4d6d,
+        0 0 20px #ff1e56;
+}
+
+/* Final Message */
+.final-message {
+    font-size: 32px;
+    text-shadow:
+        0 0 20px #ff4d6d,
+        0 0 40px #ff1e56;
+}
+.box {
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 30px #ff4d6d;
+}
+
+img {
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.question {
+    font-size: 40px;
+    text-shadow: 0 0 20px #ff4d6d;
+}
+/* ANGER POPUP SPECIAL */
+.anger-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.anger-emoji {
+    position: absolute;
+    font-size: 22px;
+    animation: angerFloat 4s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes angerFloat {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-120%);
+    }
+}
